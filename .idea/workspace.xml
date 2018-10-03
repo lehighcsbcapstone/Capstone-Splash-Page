@@ -25,8 +25,8 @@
       <file leaf-file-name="faq.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="76" column="74" lean-forward="true" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
+            <state relative-caret-position="267">
+              <caret line="83" column="75" lean-forward="true" selection-start-line="83" selection-start-column="75" selection-end-line="83" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -62,10 +62,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="287" />
-    <option name="y" value="92" />
-    <option name="width" value="1154" />
-    <option name="height" value="788" />
+    <option name="x" value="293" />
+    <option name="y" value="110" />
+    <option name="width" value="1148" />
+    <option name="height" value="770" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -171,10 +171,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7569000" />
+    <option name="totallyTimeSpent" value="7796000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="287" y="92" width="1154" height="788" extended-state="0" />
+    <frame x="293" y="110" width="1148" height="770" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -187,10 +187,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28364688" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29123327" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29856116" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30018082" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -300,8 +300,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/faq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="76" column="74" lean-forward="true" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
+        <state relative-caret-position="267">
+          <caret line="83" column="75" lean-forward="true" selection-start-line="83" selection-start-column="75" selection-end-line="83" selection-end-column="75" />
         </state>
       </provider>
     </entry>

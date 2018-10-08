@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -19,18 +20,13 @@
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-
-
-
         /* The actual timeline (the vertical ruler) */
         .timeline {
             position: relative;
             max-width: 1200px;
             margin: auto;
         }
-
         /* The actual timeline (the vertical ruler) */
         .timeline::after {
             content: '';
@@ -42,7 +38,6 @@
             left: 50%;
             margin-left: -3px;
         }
-
         /* Container around content */
         .container2 {
             padding: 10px 40px;
@@ -50,19 +45,14 @@
             background-color: inherit;
             width: 50%;
         }
-
-
-
         /* Place the container to the left */
         .left {
             left: 0;
         }
-
         /* Place the container to the right */
         .right {
             left: 50%;
         }
-
         /* Add arrows to the left container (pointing right) */
         .left::before {
             content: " ";
@@ -76,7 +66,6 @@
             border-width: 10px 0 10px 10px;
             border-color: transparent transparent transparent white;
         }
-
         /* Add arrows to the right container (pointing left) */
         .right::before {
             content: " ";
@@ -90,9 +79,6 @@
             border-width: 10px 10px 10px 0;
             border-color: transparent white transparent transparent;
         }
-
-
-
         /* The actual content */
         .content {
             padding: 20px 30px;
@@ -100,21 +86,18 @@
             position: relative;
             border-radius: 6px;
         }
-
         /* Media queries - Responsive timeline on screens less than 600px wide */
         @media screen and (max-width: 600px) {
             /* Place the timelime to the left */
             .timeline::after {
                 left: 31px;
             }
-
             /* Full-width containers */
             .container2 {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
-
             /* Make sure that all arrows are pointing leftwards */
             .container2::before {
                 left: 60px;
@@ -122,8 +105,6 @@
                 border-width: 10px 10px 10px 0;
                 border-color: transparent white transparent transparent;
             }
-
-
             /* Make all right containers behave like the left ones */
             .right {
                 left: 0%;
@@ -132,12 +113,15 @@
     </style>
 
 </head>
+
 <body>
+
 <h1 class="site-heading text-center text-white d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">Lehigh University</span>
     <span class="site-heading-lower">CSB Capstone Program</span>
 </h1>
 
+<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
         <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Lehigh CSB Capstone</a>
@@ -160,7 +144,6 @@
                 <li class="nav-item px-lg-4">
                     <a class="nav-link text-uppercase text-expanded" href="faq.html">FAQ</a>
                 </li>
-                </li>
                 <li class="nav-item active px-lg-4">
                     <a class="nav-link text-uppercase text-expanded" href="process.html">Process</a>
                 </li>
@@ -173,9 +156,6 @@
 </nav>
 
 
-<div>
-<br>
-</div>
 
 <div class="timeline">
     <div class="container2 left">
@@ -186,12 +166,12 @@
                 <li>Meet with CSB Director of Capstone
                     Projects.
                 </li>
-               <li>Establish scope of project and
-                   designated company participants.
-               </li>
-               <li> Begin developing project description.
-               </li>
-             </ul>
+                <li>Establish scope of project and
+                    designated company participants.
+                </li>
+                <li> Begin developing project description.
+                </li>
+            </ul>
             </p>
         </div>
     </div>
@@ -271,19 +251,22 @@
 </div>
 
 
+
+
 <section class="page-section cta">
-
-
-                    <h2>
-                        Download our information flier here:
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">More Information Here:</span>
                     </h2>
-                    <form method="get" action="img/2018 Sponsorship Timeline.pdf">
-                        <button class="btn btn-primary btn-xl" type="submit">Download!</button>
-                    </form>
+                    <a class="btn btn-primary btn-xl" href="img/2018%20Sponsorship%20Timeline.pdf" download >Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
-
-
 
 <footer class="footer text-faded text-center py-5">
     <div class="container">
@@ -291,6 +274,10 @@
     </div>
 </footer>
 
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

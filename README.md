@@ -15,7 +15,7 @@ Ensure you have the following installed:
 ### Steps
 
 #### Install Node.js version 10:
-nvm install 10\n
+nvm install 10  
 #### Use Node.js version 10.24.1:
 nvm use 10.24.1  
 #### Install project dependencies:

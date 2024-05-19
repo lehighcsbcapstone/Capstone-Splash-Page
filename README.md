@@ -42,6 +42,6 @@ gulp dev
 ```
 
 ## Contact Information 
-The most recent editor:  
+The most recent editor:   
 - Email: sarahczwart@gmail.com  
 - Github: [sarahzwart](https://github.com/sarahzwart) 

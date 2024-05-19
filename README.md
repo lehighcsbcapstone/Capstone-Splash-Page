@@ -3,10 +3,12 @@
 
 ## Description
 
+This website is for the Lehigh Computer Science Capstone Program. It provides information about the professors who run the program, showcases past projects, and offers guidance on how sponsors can propose their projects for the program. 
 
 ## How to run the website locally 
 
 ### Prerequisites 
+
 Ensure you have the following installed:
 * Node Version Manager (NVM)
 * Node.js

@@ -26,8 +26,7 @@ Rebuild node-sass to ensure compatibility:
 Start the development server:
 - gulp dev
 
-----
 ## Contact Information 
 The most recent editor:
 - Email: sarahczwart@gmail.com
-- Github: sarahzwart
+- Github: [sarahzwart](https://github.com/sarahzwart)

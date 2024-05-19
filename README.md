@@ -36,7 +36,7 @@ npm install -g gulp
 ```sh 
 npm rebuild node-sass  
 ```
-6. Start the development server:  
+6. Start the development server:   
 ```sh
 gulp dev  
 ```

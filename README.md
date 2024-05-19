@@ -14,17 +14,17 @@ Ensure you have the following installed:
 * Python
 ### Steps
 
-#### Install Node.js version 10:
+1. Install Node.js version 10:
 nvm install 10  
-#### Use Node.js version 10.24.1:
+2. Use Node.js version 10.24.1:
 nvm use 10.24.1  
-#### Install project dependencies:
+3. Install project dependencies:
 npm install  
-#### Install gulp globally:
+4. Install gulp globally:
 npm install -g gulp  
-#### Rebuild node-sass to ensure compatibility:
+5. Rebuild node-sass to ensure compatibility:
 npm rebuild node-sass  
-#### Start the development server:
+6. Start the development server:
 gulp dev  
 
 ## Contact Information 

@@ -1,10 +1,9 @@
 # Computer Science Capstone Website
 
-----
+
 ## Description
 
 
-----
 ## How to run the website locally 
 
 ### Prerequisites 

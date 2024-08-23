@@ -1,403 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Past Projects</title>
+  <title>Past Projects</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/business-casual.min.css" rel="stylesheet">
-    <style>
-      /* The actual timeline (the vertical ruler) */
-      .timeline {
-          position: relative;
-          max-width: 1200px;
-          margin: auto;
-      }
-      /* The actual timeline (the vertical ruler) */
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+  <style>
+    /* The actual timeline (the vertical ruler) */
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: white;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    /* Container around content */
+    .container2 {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    /* Place the container to the left */
+    .left {
+      left: 0;
+    }
+
+    /* Place the container to the right */
+    .right {
+      left: 50%;
+    }
+
+    /* Add arrows to the left container (pointing right) */
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid white;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent white;
+    }
+
+    /* Add arrows to the right container (pointing left) */
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    /* The actual content */
+    .content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+    }
+
+    /* Media queries - Responsive timeline on screens less than 600px wide */
+    @media screen and (max-width: 600px) {
+
+      /* Place the timelime to the left */
       .timeline::after {
-          content: '';
-          position: absolute;
-          width: 6px;
-          background-color: white;
-          top: 0;
-          bottom: 0;
-          left: 50%;
-          margin-left: -3px;
+        left: 31px;
       }
-      /* Container around content */
-      .container2 {
-          padding: 10px 40px;
-          position: relative;
-          background-color: inherit;
-          width: 50%;
-      }
-      /* Place the container to the left */
-      .left {
-          left: 0;
-      }
-      /* Place the container to the right */
-      .right {
-          left: 50%;
-      }
-      /* Add arrows to the left container (pointing right) */
-      .left::before {
-          content: " ";
-          height: 0;
-          position: absolute;
-          top: 22px;
-          width: 0;
-          z-index: 1;
-          right: 30px;
-          border: medium solid white;
-          border-width: 10px 0 10px 10px;
-          border-color: transparent transparent transparent white;
-      }
-      /* Add arrows to the right container (pointing left) */
-      .right::before {
-          content: " ";
-          height: 0;
-          position: absolute;
-          top: 22px;
-          width: 0;
-          z-index: 1;
-          left: 30px;
-          border: medium solid white;
-          border-width: 10px 10px 10px 0;
-          border-color: transparent white transparent transparent;
-      }
-      /* The actual content */
-      .content {
-          padding: 20px 30px;
-          background-color: white;
-          position: relative;
-          border-radius: 6px;
-      }
-      /* Media queries - Responsive timeline on screens less than 600px wide */
-      @media screen and (max-width: 600px) {
-          /* Place the timelime to the left */
-          .timeline::after {
-              left: 31px;
-          }
-          /* Full-width containers */
-          .container2 {
-              width: 100%;
-              padding-left: 70px;
-              padding-right: 25px;
-          }
-          /* Make sure that all arrows are pointing leftwards */
-          .container2::before {
-              left: 60px;
-              border: medium solid white;
-              border-width: 10px 10px 10px 0;
-              border-color: transparent white transparent transparent;
-          }
-          /* Make all right containers behave like the left ones */
-          .right {
-              left: 0%;
-          }
-      }
-  </style>
-  </head>
 
-  <body>
+      /* Full-width containers */
+      .container2 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      /* Make sure that all arrows are pointing leftwards */
+      .container2::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
+      /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+    }
+  </style>
+</head>
+
+<body>
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">Lehigh University</span>
     <span class="site-heading-lower">Computer Science Capstone</span>
   </h1>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Lehigh Computer Science Capstone</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="past_projects.html">Past Projects</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="sponsor.html">Sponsors</a>
-            </li>
-            <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="student.html">Students</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Lehigh Computer Science
+        Capstone</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="past_projects.html">Past Projects</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="sponsor.html">Sponsors</a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="student.html">Students</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <section class="page-section cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <div class="cta-inner text-center rounded">
-              <div class="panel-group" id="accordion">
+    </div>
+  </nav>
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <div class="panel-group" id="accordion">
               <h2 class="section-heading mb-0">
                 <span class="section-heading-lower">Frequently Asked Questions</span>
               </h2>
-              <br/>
+              <br />
               <h3 class="mb-2">
                 <span class=""></span>
               </h3>
 
               <ul class="list-unstyled list-hours mb-0 text-left mx-auto">
-                  <div class="container">
+                <div class="container">
 
-                      <div class="panel-group" id="accordion">
-                          <div class="panel panel-default">
-                              <div class="panel-heading">
-                                  <h4 class="panel-title">
-                                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                          <h1 style="color:Black;"><p style="font-size:22px"><b>
-                                                  1. What is the Computer Science Capstone Program?</b></p></h1></a>
-                                  </h4>
-                              </div>
-                              <div id="collapseOne" class="panel-collapse collapse in">
-                                  <div class="panel-body">
-                                      The Computer Science Capstone Program is open to all students majoring in
-                                      Computer Science. It is required that all Computer Science & Business and Computer Science & Engineering
-                                      students to complete their capstone before graduating. 
-                                  </div>
-                              </div>
-                          </div>
-
-
-
-                          <div class="panel panel-default">
-                              <div class="panel-heading">
-                                  <h4 class="panel-title">
-                                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
-                                          <h1 style="color:Black;"><p style="font-size:22px"><b>
-                                          2. When do I take my Capstone?</b></p></h1></a>
-                                  </h4>
-                              </div>
-                              <div id="collapseTen" class="panel-collapse collapse">
-                                  <div class="panel-body">
-                                    The Capstone Program is completed over two semesters, starting in the 
-                                    Spring of your junior year and concluding in the Fall of your senior year.
-                                  </div>
-                              </div>
-                          </div>
-
-
-                          <div class="panel panel-default">
-                              <div class="panel-heading">
-                                  <h4 class="panel-title">
-                                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
-                                          <h1 style="color:Black;"><p style="font-size:22px"><b>
-                                              3. What prerequisites must be completed before Capstone?</b></p></h1></a>
-                                  </h4>
-                              </div>
-                              <div id="collapseEleven" class="panel-collapse collapse">
-                                  <div class="panel-body">
-                                      CSE 216 must be completed before registering for Capstone. For CSB students, CSE 241 must
-                                      also be completed.  
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="panel panel-default">
-                              <div class="panel-heading">
-                                  <h4 class="panel-title">
-                                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">
-                                          <h1 style="color:Black;"><p style="font-size:22px"><b>
-                                              4. What type of projects are offered in Capstone? </b></p></h1></a>
-                                  </h4>
-                              </div>
-                              <div id="collapseTwelve" class="panel-collapse collapse">
-                                  <div class="panel-body">
-                                      <a class="nav-link" href="past_projects.html"> <p>Click here to view past projects.</p></a>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="panel panel-default">
-                              <div class="panel-heading">
-                                  <h4 class="panel-title">
-                                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">
-                                          <h1 style="color:Black;"><p style="font-size:22px"><b>
-                                              5. How do I pick my Capstone project? </b></p></h1></a>
-                                  </h4>
-                              </div>
-                              <div id="collapseThirteen" class="panel-collapse collapse">
-                                  <div class="panel-body">
-                                    All projects are presented during class, and you will select your preferences 
-                                    within the first week. You'll complete a Google form listing your favorite projects, 
-                                    and a Capstone group and project will be assigned based on your preferences.
-                                  </div>
-                              </div>
-                          </div>
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseOne">
+                            <h1 style="color:Black;">
+                              <p style="font-size:22px"><b>
+                                  1. What is the Computer Science Capstone Program?</b></p>
+                            </h1>
+                          </a>
+                        </h4>
                       </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          The Computer Science Capstone Program is open to all students majoring in
+                          Computer Science. It is required that all Computer Science & Business and Computer Science &
+                          Engineering
+                          students to complete their capstone before graduating.
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseTen">
+                            <h1 style="color:Black;">
+                              <p style="font-size:22px"><b>
+                                  2. When do I take my Capstone?</b></p>
+                            </h1>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          The Capstone Program is completed over two semesters, starting in the
+                          Spring of your junior year and concluding in the Fall of your senior year.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseEleven">
+                            <h1 style="color:Black;">
+                              <p style="font-size:22px"><b>
+                                  3. What prerequisites must be completed before Capstone?</b></p>
+                            </h1>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseEleven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          CSE 216 must be completed before registering for Capstone. For CSB students, CSE 241 must
+                          also be completed.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseTwelve">
+                            <h1 style="color:Black;">
+                              <p style="font-size:22px"><b>
+                                  4. What type of projects are offered in Capstone? </b></p>
+                            </h1>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwelve" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <a class="nav-link" href="past_projects.html">
+                            <p>Click here to view past projects.</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseThirteen">
+                            <h1 style="color:Black;">
+                              <p style="font-size:22px"><b>
+                                  5. How do I pick my Capstone project? </b></p>
+                            </h1>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThirteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          All projects are presented during class, and you will select your preferences
+                          within the first week. You'll complete a Google form listing your favorite projects,
+                          and a Capstone group and project will be assigned based on your preferences.
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
                 <style>
-                    .faqHeader {
-                        font-size: 27px;
-                        margin: 20px;
-                    }
+                  .faqHeader {
+                    font-size: 27px;
+                    margin: 20px;
+                  }
+
                   .panel-heading [data-toggle="collapse"]:after {
                     font-family: 'Glyphicons Halflings';
                     float: right;
                     color: #F58723;
                     font-size: 18px;
                     line-height: 20px;
-                      /* rotate "play" icon from > (right arrow) to down arrow */
-                      -webkit-transform: rotate(-90deg);
-                      -moz-transform: rotate(-90deg);
-                      -ms-transform: rotate(-90deg);
-                      -o-transform: rotate(-90deg);
-                      transform: rotate(-90deg);
+                    /* rotate "play" icon from > (right arrow) to down arrow */
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
                   }
-                    .panel-heading [data-toggle="collapse"].collapsed:after {
-                        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
-                        -webkit-transform: rotate(90deg);
-                        -moz-transform: rotate(90deg);
-                        -ms-transform: rotate(90deg);
-                        -o-transform: rotate(90deg);
-                        transform: rotate(90deg);
-                        color: #454444;
-                    }
 
+                  .panel-heading [data-toggle="collapse"].collapsed:after {
+                    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    color: #454444;
+                  }
                 </style>
               </ul>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="page-section text-center">
-      <button class="btn btn-primary" id="toggleTimelineBtn" style="background-color: #6d5034; border-color: white;">Show Capstone Timeline</button>
-    </section>
-    <section class="page-section" id="timelineSection" style="display: none;">
-      <div class="timeline">
-        <div class="container2 left">
-            <div class="content">
-                <h2>Fall Semester</h2>
-                <p>
-                <ul style="list-style-type:circle">
-                    <li>Complete CSE 216
-                    </li>
-                    <li>Register for Capstone
-                    </li>
-                </ul>
-                </p>
-            </div>
+  <section class="page-section text-center">
+      <button class="btn btn-primary" id="toggleTimelineBtn"
+        style="background-color: #6d5034; border-color: white;">Show Capstone Timeline
+      </button>
+  </section>
+  <section class="page-section" id="timelineSection" style="display: none;">
+    <div class="timeline">
+      <div class="container2 left">
+        <div class="content">
+          <h2>Fall Semester</h2>
+          <p>
+          <ul style="list-style-type:circle">
+            <li>Complete CSE 216
+            </li>
+            <li>Register for Capstone
+            </li>
+          </ul>
+          </p>
         </div>
-        <div class="container2 right">
-            <div class="content">
-                <h2>January</h2>
-                <p>
-                <ul style="list-style-type:circle">
-                    <li>Attend presentation of all Capstone Projects 
-                      and fill out form of choices. 
-                    </li>
-                    <li> Organize time each week to meet 
-                      with Sponsor and Adjunct Professor. 
-                    </li>
-                    <li> Begin working on Project!
-                    </li>
-                </ul>
-    
-                </p>
-            </div>
+      </div>
+      <div class="container2 right">
+        <div class="content">
+          <h2>January</h2>
+          <p>
+          <ul style="list-style-type:circle">
+            <li>Attend presentation of all Capstone Projects
+              and fill out form of choices.
+            </li>
+            <li> Organize time each week to meet
+              with Sponsor and Adjunct Professor.
+            </li>
+            <li> Begin working on Project!
+            </li>
+          </ul>
+
+          </p>
         </div>
-        <div class="container2 left">
-            <div class="content">
-                <h2>February-April</h2>
-                <ul style="list-style-type:circle">
-                    <li> Work with teammates to set goals and meet 
-                      requirements for your project. 
-                    </li>
-                    <li> Continue meeting with adjunct professor and sponsor. 
-                    </li>
-                    <li>
-                      Mid-semester presentation to fellow capstone students. 
-                    </li>
-                </ul>
-    
-            </div>
+      </div>
+      <div class="container2 left">
+        <div class="content">
+          <h2>February-April</h2>
+          <ul style="list-style-type:circle">
+            <li> Work with teammates to set goals and meet
+              requirements for your project.
+            </li>
+            <li> Continue meeting with adjunct professor and sponsor.
+            </li>
+            <li>
+              Mid-semester presentation to fellow capstone students.
+            </li>
+          </ul>
+
         </div>
-        <div class="container2 right">
-            <div class="content">
-                <h2>May</h2>
-                    <p>  End of semester presentation of current progress 
-                      and goals. Sponsors, Adjunct, and others may attend. 
-                    </p>
-  
-            </div>
+      </div>
+      <div class="container2 right">
+        <div class="content">
+          <h2>May</h2>
+          <p> End of semester presentation of current progress
+            and goals. Sponsors, Adjunct, and others may attend.
+          </p>
+
         </div>
-        <div class="container2 left">
-            <div class="content">
-                <h2>August</h2>
-                <ul style="list-style-type:circle">
-                    <li>  Organize new meeting time to meet with sponsor.
-                    </li>
-                    <li> Begin working on second half of Capstone Project. 
-                    </li>
-                </ul>
-            </div>
+      </div>
+      <div class="container2 left">
+        <div class="content">
+          <h2>August</h2>
+          <ul style="list-style-type:circle">
+            <li> Organize new meeting time to meet with sponsor.
+            </li>
+            <li> Begin working on second half of Capstone Project.
+            </li>
+          </ul>
         </div>
-        <div class="container2 right">
-            <div class="content">
-                <h2>September-November</h2>
-                <p> Continue working on project and 
-                  preparing for presentations.</p>
-            </div>
+      </div>
+      <div class="container2 right">
+        <div class="content">
+          <h2>September-November</h2>
+          <p> Continue working on project and
+            preparing for presentations.</p>
         </div>
-        <div class="container2 left">
-          <div class="content">
-              <h2>December</h2>
-              <p> Wrap up Capstone with final presentations! </p>
-          </div>
+      </div>
+      <div class="container2 left">
+        <div class="content">
+          <h2>December</h2>
+          <p> Wrap up Capstone with final presentations! </p>
+        </div>
       </div>
 
     </div>
-    
-
-    </section>
-
-
-    <footer class="footer text-faded text-center py-5">
-      <div class="container">
-        <p class="m-0 small">Copyright &copy; Lehigh University 2018</p>
+  </section>
+  <section class="page-section">
+    <div class="container">
+      <div class="cta-inner text-center rounded">
+        <div class="d-flex justify-content-center flex-wrap">
+            <a href="mailto:bsy296@lehigh.edu?subject=Capstone%20Student%20Question" class="btn btn-primary m-2 w-auto">Request More Information from CSE Advisor</a>
+            <a href="mailto:ahg212@lehigh.edu?subject=Capstone%20Student%20Question" class="btn btn-primary m-2 w-auto">Request More Information from CSB Advisor</a>
+        </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('#toggleTimelineBtn').click(function() {
-          $('#timelineSection').toggle(); // Toggles the display property of the timeline section
-          var isVisible = $('#timelineSection').is(':visible');
-          $(this).text(isVisible ? 'Hide Timeline' : 'Show Capstone Timeline'); // Change button text based on visibility
-        });
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright &copy; Lehigh University 2018</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#toggleTimelineBtn').click(function () {
+        $('#timelineSection').toggle(); // Toggles the display property of the timeline section
+        var isVisible = $('#timelineSection').is(':visible');
+        $(this).text(isVisible ? 'Hide Timeline' : 'Show Capstone Timeline'); // Change button text based on visibility
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
 
 
 </html>

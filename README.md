@@ -46,7 +46,7 @@ gulp dev
 1. Login to csb.capstoneprojects@gmail.com on Google Chrome
 2. Login to firebase in terminal with that gmail account:
 ```sh
-firbase login
+firebase login
 ```
 3. Deploy the app:
 ```sh

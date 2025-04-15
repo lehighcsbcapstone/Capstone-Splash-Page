@@ -23,6 +23,14 @@
   <link href="css/business-casual.min.css" rel="stylesheet">
   <style>
     /* The actual timeline (the vertical ruler) */
+      @media (max-width: 576px) {
+        .mobile-brand {
+          font-size: 0.9rem; 
+          white-space: nowrap; 
+          overflow: hidden;
+          text-overflow: ellipsis; 
+        }
+      }
     .timeline {
       position: relative;
       max-width: 1200px;
@@ -136,12 +144,14 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Lehigh Computer Science
-        Capstone</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-flex align-items-center justify-content-between w-100 px-2">
+        <a class="navbar-brand text-uppercase font-weight-bold d-lg-none mobile-brand" href="#">
+          Lehigh Computer Science Capstone
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>        
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item px-lg-4">

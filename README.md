@@ -41,6 +41,18 @@ npm rebuild node-sass
 gulp dev  
 ```
 
+## How to deploy app to firebase
+
+1. Login to csb.capstoneprojects@gmail.com on Google Chrome
+2. Login to firebase in terminal with that gmail account:
+```sh
+firbase login
+```
+3. Deploy the app:
+```sh
+firebase deploy
+```
+
 ## Contact Information 
 The most recent editor:    
 - Email: sarahczwart@gmail.com  
